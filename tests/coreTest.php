@@ -106,6 +106,7 @@ class coreCase extends CommandUnishTestCase {
       ],
     ];
     $options = [
+      'root' => $this->webroot(),
       'format' => 'json',
     ];
     file_put_contents($drush_config_file, Yaml::dump($options_with_uri, PHP_INT_MAX, 2));
